@@ -1,0 +1,3 @@
+Copyright (c) 2020 fren_gor - All rights reserved.
+
+You can't shade this code into your plugin jars, it shall be only used as a provided dependency to compile your plugins.
