@@ -2,9 +2,11 @@
 
 package com.fren_gor.ultimateScoreboards.api;
 
+import com.fren_gor.ultimateScoreboards.api.lines.PlaceholderLine;
 import com.fren_gor.ultimateScoreboards.api.lines.SlidingLine;
 import com.fren_gor.ultimateScoreboards.api.lines.StepLine;
 import com.fren_gor.ultimateScoreboards.api.lines.TextLine;
+import com.fren_gor.ultimateScoreboards.api.lines.UpdateFrequencyLine;
 import com.fren_gor.ultimateScoreboards.api.scoreboards.Scoreboard1_13;
 import com.fren_gor.ultimateScoreboards.api.scoreboards.ScoreboardLite;
 import com.fren_gor.ultimateScoreboards.api.scoreboards.ScoreboardLong;
@@ -95,9 +97,9 @@ public abstract class UltimateScoreboardsAPI {
 
     public abstract StepLine craftStepLine(Collection<String> steps);
 
-    public abstract Line addUpdateFrequency(Line base, long updateFrequency);
+    public abstract UpdateFrequencyLine addUpdateFrequency(Line base, long updateFrequency);
 
-    public abstract Line addPlaceholderReplacing(Line base);
+    public abstract PlaceholderLine addPlaceholderReplacing(Line base);
 
     // =========================================
 
