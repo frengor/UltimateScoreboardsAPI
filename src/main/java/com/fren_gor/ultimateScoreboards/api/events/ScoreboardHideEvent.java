@@ -3,17 +3,10 @@
 package com.fren_gor.ultimateScoreboards.api.events;
 
 import com.fren_gor.ultimateScoreboards.api.Scoreboard;
-import com.fren_gor.ultimateScoreboards.api.events.ScoreboardEvent;
 import lombok.Getter;
-import lombok.Setter;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Cancellable;
 
-public class ScoreboardHideEvent extends ScoreboardEvent implements Cancellable {
-
-    @Getter
-    @Setter
-    private boolean cancelled;
+public class ScoreboardHideEvent extends ScoreboardEvent {
 
     @Getter
     private final Player player;

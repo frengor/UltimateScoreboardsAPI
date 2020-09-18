@@ -4,15 +4,9 @@ package com.fren_gor.ultimateScoreboards.api.events;
 
 import com.fren_gor.ultimateScoreboards.api.Scoreboard;
 import lombok.Getter;
-import lombok.Setter;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Cancellable;
 
-public class ScoreboardShowEvent extends ScoreboardEvent implements Cancellable {
-
-    @Getter
-    @Setter
-    private boolean cancelled;
+public class ScoreboardShowEvent extends ScoreboardEvent {
 
     @Getter
     private final Player player;
