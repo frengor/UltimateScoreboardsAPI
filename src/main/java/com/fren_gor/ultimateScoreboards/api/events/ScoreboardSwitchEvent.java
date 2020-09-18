@@ -6,6 +6,10 @@ import com.fren_gor.ultimateScoreboards.api.Scoreboard;
 import lombok.Getter;
 import org.bukkit.entity.Player;
 
+/**
+ * Called before {@link ScoreboardShowEvent} and {@link ScoreboardHideEvent} events.<br>
+ * Player is present in both old and new scoreboards.
+ */
 public class ScoreboardSwitchEvent extends ScoreboardEvent {
 
     @Getter

@@ -6,6 +6,10 @@ import com.fren_gor.ultimateScoreboards.api.Scoreboard;
 import lombok.Getter;
 import org.bukkit.entity.Player;
 
+/**
+ * Called after {@link ScoreboardSwitchEvent} and {@link ScoreboardHideEvent} if the player was viewing another scoreboard.<br>
+ * Player is present only in the new scoreboard.
+ */
 public class ScoreboardShowEvent extends ScoreboardEvent {
 
     @Getter
