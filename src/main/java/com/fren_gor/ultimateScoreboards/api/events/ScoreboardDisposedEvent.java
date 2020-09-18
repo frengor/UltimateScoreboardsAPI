@@ -5,7 +5,6 @@ package com.fren_gor.ultimateScoreboards.api.events;
 import com.fren_gor.ultimateScoreboards.api.Scoreboard;
 import lombok.Getter;
 import lombok.Setter;
-import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 
 public class ScoreboardDisposedEvent extends ScoreboardEvent implements Cancellable {
@@ -14,11 +13,7 @@ public class ScoreboardDisposedEvent extends ScoreboardEvent implements Cancella
     @Setter
     private boolean cancelled;
 
-    @Getter
-    private final Player player;
-
-    public ScoreboardDisposedEvent(Player player, Scoreboard scoreboard) {
+    public ScoreboardDisposedEvent(Scoreboard scoreboard) {
         super(scoreboard);
-        this.player = player;
     }
 }
