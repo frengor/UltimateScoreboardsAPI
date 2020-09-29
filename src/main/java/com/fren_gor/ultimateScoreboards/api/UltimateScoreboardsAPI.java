@@ -22,6 +22,7 @@ import java.util.function.Supplier;
 
 /**
  * API main class.
+ *
  * @author fren_gor
  */
 public abstract class UltimateScoreboardsAPI {
@@ -113,5 +114,7 @@ public abstract class UltimateScoreboardsAPI {
     public abstract Scoreboard getCurrentScoreboard(Player player);
 
     public abstract void show(Player player, Scoreboard scoreboard);
+
+    public abstract void showDefaultScoreboard(Player player);
 
 }
