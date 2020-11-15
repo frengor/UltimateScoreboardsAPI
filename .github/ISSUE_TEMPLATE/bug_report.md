@@ -20,4 +20,4 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Dumps**
-Restart the server (NOT RELOAD!!!) and do `ul dump` on the console. Then reproduce the bug and do again `ul dump` on the console. Open https://pastebin.com in your browser and create two different pastes with the contents of the last-created two dumps in the plugins/UltimateScoreboards/dumps/ folder. Paste here ONLY the two links to the pastes.
+Restart the server (NOT RELOAD!!!) and do `ul dump` on the console as soon as it starts. Then reproduce the bug and do again `ul dump` on the console. Open https://pastebin.com in your browser and create two different pastes with the contents of the last-created two dumps in the plugins/UltimateScoreboards/dumps/ folder. Paste here ONLY the two links to the pastes.
