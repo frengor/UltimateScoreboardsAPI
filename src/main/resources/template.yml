@@ -1,0 +1,85 @@
+# Scoreboard unique name is the file name. Use that in commands.
+# For placeholder support use PAPI (https://www.spigotmc.org/resources/placeholderapi.6245)
+#
+# Do not change or remove!!!
+config-version: 1
+
+# Types:
+# LONG - Supports 60-72 characters per line (72 without color codes).
+# LITE - Supports 24-32 characters per line (32 without color codes).
+# STATIC - Supports 60-72 characters per line (72 without color codes), but doesn't supports animations.
+# v1_13 - Supports infinite characters per line, but is available only on 1.13+ servers.
+scoreboard-type: LONG
+
+# How many ticks should scoreboard update animations and placeholders (1 sec = 20 ticks). It must be at least 1 and an integer.
+# If scoreboard-type is set to LONG, due to internal implementation, the scoreboard takes 3 updates to show the new values.
+# To fix this, set this to (how many ticks it should update) / 3.
+# N.B.: Ignored if scoreboard-type is STATIC, since there aren't updates.
+update-frequency: 20
+
+# Whether scoreboard contains per-player options (like some placeholders).
+# If scoreboard doesn't contains per-player things (ex: static lines or bungeecord placeholder) set this to false, otherwise set this to true.
+# This setting is used for internal optimizations and to reduce used memory.
+# N.B.: Ignored if scoreboard-type is STATIC.
+per-player-scoreboard: false
+
+# If scoreboard-type is LONG or STATIC, it could happen that two or more lines bug if they're contains equals substrings.
+# Turn this to true if you experience bugs with lines.
+# This setting is set to false by defualt, since it reduce max characters per line by either 2 or 4 characters.
+# N.B.: Ignored if scoreboard-type is LITE or v1_13.
+ensure-uniqueness: false
+
+# Line to be used as title, look at 'lines' down below
+title: titleline
+
+# Lines to be used inside scoreboard, look at 'lines' down below
+# Lines can be used more than one
+# Max 15 lines
+scoreboard-lines:
+  - line1
+  - line2
+  - line3
+
+# Declare lines to be used into scoreboard-lines here.
+#
+# Line types:
+# TEXT - Line that contains one string.
+# SLIDING - Line that make characters appear one per update.
+# STEP - Line that shows one string from a list per update.
+lines:
+  line1:
+    type: TEXT
+    # Parameters for LITERAL line:
+    # text - The line text
+    # placeholders - true if text contains placeholders, false otherwise
+    text: "&aLine 1"
+    placeholders: false
+  line2:
+    type: SLIDING
+    # Parameters for SLIDING line:
+    # text - The line text
+    # update-frequency: how many updates the line should update
+    # skip-blanks - true if blanks should be kept with the previous word, false otherwise
+    # reverse - true if characters should be disappearing from right, false for default animation
+    # placeholders - true if text contains placeholders, false otherwise
+    text: "&5Line 2"
+    update-frequency: 1
+    skip-blanks: true
+    reverse: false
+    placeholders: false
+  line3:
+    type: STEP
+    # Parameters for STEP line:
+    # steps - List of strings
+    # update-frequency: how many updates the line should update
+    # placeholders - true if text contains placeholders, false otherwise
+    steps:
+      - "&eLine 3"
+      - "&6Line 3"
+    update-frequency: 1
+    placeholders: false
+  titleline:
+    type: TEXT
+    text: "&7Title"
+    placeholders: false
+
