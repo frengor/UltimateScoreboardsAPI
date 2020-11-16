@@ -12,8 +12,8 @@ config-version: 1
 scoreboard-type: LONG
 
 # How many ticks should scoreboard update animations and placeholders (1 sec = 20 ticks). It must be at least 1 and an integer.
-# If scoreboard-type is set to LONG, due to internal implementation, the scoreboard takes 3 updates to show the new values.
-# To fix this, set this to (how many ticks it should update) / 3.
+# If scoreboard-type is set to LONG, due to internal implementation, the scoreboard takes 2 updates to show the new values.
+# To fix this, set this to (how many ticks it should update) / 2.
 # N.B.: Ignored if scoreboard-type is STATIC, since there aren't updates.
 update-frequency: 20
 
