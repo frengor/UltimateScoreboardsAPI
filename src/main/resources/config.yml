@@ -1,0 +1,16 @@
+# Change the defualt scoreboard shown to players on join.
+default-scoreboard:
+  # NONE - no scoreboard will be displayed.
+  # EVERYONE - default scoreboard is shown to everyone.
+  # PERM - default scoreboard is shown only if the player has a certain permission.
+  type: EVERYONE
+  # Valid scoreboard file name in scoreboards directory.
+  default-scoreboard-name: example
+  # A permission for PERM method, ignored if default scoreboard type isn't PERM.
+  permission: 'ultimatescoreboards.defscoreboard'
+
+# Whether the plugin should check for new versions.
+check-for-new-versions: true
+
+# Do not change or remove!!!
+config-version: 1
