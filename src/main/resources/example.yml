@@ -25,7 +25,7 @@ per-player-scoreboard: false
 
 # If scoreboard-type is LONG or STATIC, it could happen that two or more lines bug if they're contains equals substrings.
 # Turn this to true if you experience bugs with lines.
-# This setting is set to false by defualt, since it reduce max characters per line by either 2 or 4 characters.
+# This setting is set to false by defualt, since it reduces max characters per line by either 2 or 4 characters.
 # N.B.: Ignored if scoreboard-type is LITE or v1_13.
 ensure-uniqueness: false
 
