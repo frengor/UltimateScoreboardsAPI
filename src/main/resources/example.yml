@@ -1,6 +1,6 @@
 # Scoreboard unique name is the file name. Use that in commands.
 # For placeholder support use PAPI (https://www.spigotmc.org/resources/placeholderapi.6245).
-
+#
 # Do not change or remove!!!
 config-version: 1
 
@@ -12,8 +12,8 @@ config-version: 1
 scoreboard-type: LONG
 
 # How many ticks should scoreboard update animations and placeholders (1 sec = 20 ticks). It must be at least 1 and an integer.
-# If scoreboard-type is set to LONG, due to internal implementation, the scoreboard takes 1 updates to show the new values.
-# To fix this, set this to (how many ticks it should update) / 1.
+# If scoreboard-type is set to LONG, due to internal implementation, the scoreboard takes 2 updates to show the new values.
+# To fix this, set this to (how many ticks it should update) / 2.
 # N.B.: Ignored if scoreboard-type is STATIC, since there aren't updates.
 update-frequency: 10
 
@@ -46,13 +46,13 @@ scoreboard-lines:
 # Declare lines to be used into scoreboard-lines here.
 #
 # Line types:
-# TEXT - Line that contains one string.
-# SLIDING - Line that make characters appear one per update.
-# STEP - Line that shows one string from a list per update.
+# TEXT - Line that contains one string
+# SLIDING - Line that make characters appear one per update
+# STEP - Line that shows one string from a list per update
 lines:
   line1:
     type: TEXT
-    # Parameters for LITERAL line:
+    # Parameters for TEXT line:
     # text - The line text
     # placeholders - true if text contains placeholders, false otherwise
     text: "&eThis &6is &5a &cline"
