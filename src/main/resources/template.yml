@@ -33,7 +33,7 @@ ensure-uniqueness: false
 title: titleline
 
 # Lines to be used inside scoreboard, look at 'lines' down below
-# Lines can be used more than one
+# Lines can be used more than once
 # Max 15 lines
 scoreboard-lines:
   - line1
