@@ -29,10 +29,10 @@ per-player-scoreboard: false
 # N.B.: Ignored if scoreboard-type is LITE or v1_13.
 ensure-uniqueness: false
 
-# Line to be used as title, look at 'lines' down below
+# Line to be used as title, look at 'lines' down below.
 title: titleline
 
-# Lines to be used inside scoreboard, look at 'lines' down below
+# Lines to be used inside scoreboard, look at 'lines' down below.
 # Lines can be used more than once.
 # Max 15 lines
 scoreboard-lines:
@@ -43,13 +43,13 @@ scoreboard-lines:
 # Declare lines to be used into scoreboard-lines here.
 #
 # Line types:
-# TEXT - Line that contains one string.
-# SLIDING - Line that make characters appear one per update.
-# STEP - Line that shows one string from a list per update.
+# TEXT - Line that contains one string
+# SLIDING - Line that make characters appear one per update
+# STEP - Line that shows one string from a list per update
 lines:
   line1:
     type: TEXT
-    # Parameters for LITERAL line:
+    # Parameters for TEXT line:
     # text - The line text
     # placeholders - true if text contains placeholders, false otherwise
     text: "&aLine 1"
@@ -82,4 +82,3 @@ lines:
     type: TEXT
     text: "&7Title"
     placeholders: false
-
