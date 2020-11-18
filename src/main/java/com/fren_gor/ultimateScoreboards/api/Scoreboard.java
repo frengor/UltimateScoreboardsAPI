@@ -10,6 +10,8 @@ import java.util.Set;
 
 public interface Scoreboard {
 
+    ScoreboardType getType();
+
     void setUpdateFrequency(long updateFrequency);
 
     long getUpdateFrequency();
