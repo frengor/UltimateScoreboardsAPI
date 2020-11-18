@@ -100,7 +100,7 @@ public abstract class UltimateScoreboardsAPI {
 
     public abstract UpdateFrequencyLine addUpdateFrequency(Line base, long updateFrequency);
 
-    public abstract PlaceholderLine addPlaceholderReplacing(Line base);
+    public abstract PlaceholderLine addPlaceholdersReplacing(Line base);
 
     // =========================================
 
