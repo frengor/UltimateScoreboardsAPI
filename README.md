@@ -19,7 +19,7 @@ UltimateScoreboard is :
 ### Developer API
 
 The code in this repository is not the source code of UltimateScoreboards, but the official API of the plugin.  
-If you're a developer and you're intrested in it check out the [official Developer API Wiki](https://github.com/frengor/UltimateScoreboards/wiki/Developer-API).
+If you're a developer and you're intrested check out the [official Developer API Wiki](https://github.com/frengor/UltimateScoreboards/wiki/Developer-API).
 
 **Javadocs:** <https://us-docs.frengor.com> ([alternative link](https://frengor.github.io/UltimateScoreboardsAPI/))  
 **Maven:**
