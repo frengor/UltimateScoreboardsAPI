@@ -12,7 +12,7 @@ UltimateScoreboard is :
 * **easy to use**: the plugin is pretty straightforward to use
 * **flexible**: every other team-based plugin out there is supported (obviously, not scoreboard ones) 
 * **extensive**: you can customize everything from the config
-* **built-in antiflicker**: scoreboards will never flick
+* **reliable**: scoreboards will never flick
 * **packet-based**: the plugin is all packet-based, which means that it won't impact on the server performance
 * **the best one**: you can create scoreboards on 1.8-1.12 with ~70 characters per line with only 1-tick update delay (no other plugin that I'm aware of can do that).
 
