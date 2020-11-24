@@ -11,4 +11,8 @@ public interface Line {
 
     Line clone();
 
+    default boolean requirePlaceholdersPreProcessing(){
+        return false;
+    }
+
 }
