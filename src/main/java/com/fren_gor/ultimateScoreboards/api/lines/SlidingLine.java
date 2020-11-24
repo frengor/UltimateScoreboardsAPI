@@ -8,9 +8,9 @@ import java.util.List;
 
 public interface SlidingLine extends Line {
 
-    List<String> getLines();
+    boolean isSkipBlanksEnabled();
 
-    int getSteps();
+    boolean isReverseEnabled();
 
     void setLine(String line);
 
