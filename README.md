@@ -16,7 +16,7 @@ UltimateScoreboard is :
 * **packet-based**: the plugin is all packet-based, which means that it won't impact on the server performance
 * **powerful**: you can create scoreboards with ~72 characters per line with only 1-tick update delay (this only on 1.8-1.12 servers, on 1.13+ mojang removed all limitations).
 
-### Limitations
+### Minecraft Limitations
 
 There are some limitations regarding scoreboards on minecraft versions from 1.8 to 1.12. This is due to the fact that scoreboards were originally thought by Mojang  to contains per-player scores, like how many blocks every player mined, ect. Vanilla scoreboards do look like a list of players with red numbers at their right.  
 From 1.13, Mojang removed those limitations, seeing how server were using scoreboards to contains more complicated things than a list of player names, like colored lines and texts.
