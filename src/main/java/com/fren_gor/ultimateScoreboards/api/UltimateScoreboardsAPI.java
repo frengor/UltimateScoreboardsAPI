@@ -29,7 +29,6 @@ public abstract class UltimateScoreboardsAPI {
 
     @Getter
     @Setter
-    @Nullable
     public static UltimateScoreboardsAPI API;
 
     // =============== Long Scoreboard ===================
