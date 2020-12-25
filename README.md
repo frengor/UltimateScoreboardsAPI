@@ -2,7 +2,7 @@
 
 Official repository of UltimateScoreboards plugin. Get it on <https://www.spigotmc.org/>.
 
-For the **official wiki** visit <https://github.com/frengor/UltimateScoreboards/wiki>.
+For the **official wiki** visit <https://github.com/frengor/UltimateScoreboardsAPI/wiki>.
 
 UltimateScoreboards is a powerful and light plugin to manage scoreboards on your Minecraft server.  
 It comes with a ton of features which allows you to easily customize your scoreboards. 
@@ -25,8 +25,8 @@ From 1.13, Mojang removed those limitations, seeing how server were using scoreb
 
 ### Developer API
 
-The code in this repository is not the source code of UltimateScoreboards, but the official API of the plugin.  
-If you're a developer and you're intrested check out the [official Developer API Wiki](https://github.com/frengor/UltimateScoreboards/wiki/Developer-API).
+In the repository you'll find the official API of the plugin.  
+If you're a developer and you're intrested check out the [official Developer API Wiki](https://github.com/frengor/UltimateScoreboardsAPI/wiki/Developer-API).
 
 **Javadocs:** <https://us-docs.frengor.com> ([alternative link](https://frengor.github.io/UltimateScoreboardsAPI/))  
 **Maven:**
@@ -43,4 +43,4 @@ If you're a developer and you're intrested check out the [official Developer API
     <version>1.0</version>
 </dependency>
 ```
-API-Jar download for manual dependency addition: <https://github.com/frengor/UltimateScoreboards/releases>
+API-Jar download for manual dependency addition: <https://github.com/frengor/UltimateScoreboardsAPI/releases>
