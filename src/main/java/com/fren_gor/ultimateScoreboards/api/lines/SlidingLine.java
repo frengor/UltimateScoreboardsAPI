@@ -4,8 +4,6 @@ package com.fren_gor.ultimateScoreboards.api.lines;
 
 import com.fren_gor.ultimateScoreboards.api.Line;
 
-import java.util.List;
-
 public interface SlidingLine extends Line {
 
     boolean isSkipBlanksEnabled();
