@@ -1,4 +1,5 @@
 # UltimateScoreboards
+[![](https://jitpack.io/v/frengor/UltimateScoreboardsAPI.svg)](https://jitpack.io/#frengor/UltimateScoreboardsAPI)
 
 Official repository of UltimateScoreboards plugin. Get it on <https://www.spigotmc.org/>.
 
