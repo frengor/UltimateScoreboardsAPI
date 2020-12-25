@@ -48,6 +48,7 @@ public interface Line {
     /**
      * Saves the processed line. Used in placeholder pre-processing.
      *
+     * @param line The processed line.
      * @throws UnsupportedOperationException If placeholders pre processing is disabled.
      */
     default void setProcessedLine(String line) {
