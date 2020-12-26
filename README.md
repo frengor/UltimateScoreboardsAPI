@@ -8,10 +8,10 @@ For the **official wiki** visit <https://github.com/frengor/UltimateScoreboardsA
 UltimateScoreboards is a powerful and light plugin to manage scoreboards on your Minecraft server.  
 It comes with a ton of features which allows you to easily customize your scoreboards. 
 
-UltimateScoreboard is :
+UltimateScoreboard is:
 * **fast**: the plugin is written with efficiency in mind
 * **easy to use**: the plugin is pretty straightforward to use
-* **flexible**: every other team-based plugin out there is supported (obviously, not scoreboard ones) 
+* **flexible**: every other team-based plugin out there is supported (obviously, not scoreboard ones)
 * **extensive**: you can customize everything from the config
 * **reliable**: scoreboards will never flick thanks to the built-in antiflicker
 * **packet-based**: the plugin is all packet-based, which means that it won't impact on the server performance
