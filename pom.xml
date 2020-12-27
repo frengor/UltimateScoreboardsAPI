@@ -78,7 +78,7 @@
                     <include>LICENSE</include>
                 </includes>
             </resource>
-            <resource>
+            <!-- <resource>
                 <targetPath>.</targetPath>
                 <filtering>true</filtering>
                 <directory>src/main/resources/</directory>
@@ -87,7 +87,7 @@
                     <exclude>example.yml</exclude>
                     <exclude>template.yml</exclude>
                 </excludes>
-            </resource>
+            </resource> -->
         </resources>
 
         <plugins>
