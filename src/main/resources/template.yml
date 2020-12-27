@@ -51,8 +51,10 @@ lines:
     type: TEXT
     # Parameters for TEXT line:
     # text - The line text
+    # update-frequency: how many updates the line should update
     # placeholders - true if text contains placeholders, false otherwise
     text: "&aLine 1"
+    update-frequency: 1
     placeholders: false
   line2:
     type: SLIDING
