@@ -54,12 +54,15 @@ lines:
     type: TEXT
     # Parameters for TEXT line:
     # text - The line text
+    # update-frequency: how many updates the line should update
     # placeholders - true if text contains placeholders, false otherwise
     text: "&eThis &6is &5a &cline"
+    update-frequency: 1
     placeholders: false
   line2:
     type: TEXT
     text: "&eThis &6is &5a &cvery &blong &cline&7, &1more &9than &450 &6chars"
+    update-frequency: 1
     placeholders: false
   line3:
     type: SLIDING
@@ -105,4 +108,3 @@ lines:
       - "&dExample"
     update-frequency: 2
     placeholders: false
-
