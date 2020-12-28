@@ -4,6 +4,7 @@ package com.fren_gor.ultimateScoreboards.api;
 
 import com.fren_gor.ultimateScoreboards.api.lines.PlaceholderLine;
 import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public interface Line {
@@ -15,6 +16,7 @@ public interface Line {
      * then the first one is passed. null if there are no viewers.
      * @return The new line to be displayed on the scoreboard.
      */
+    @NotNull
     String getLine(@Nullable Player player);
 
     Line clone();
@@ -38,21 +40,21 @@ public interface Line {
     /**
      * Returns the raw line. Used in placeholder pre-processing.
      *
-     * @return The raw line.
-     * @throws UnsupportedOperationException If placeholders pre processing is disabled.
+     * @return The raw line. If {@code null}, {@link Line#setProcessedLine(String)} will be invoked with {@code null}.
+     * @throws UnsupportedOperationException If placeholders pre-processing is disabled.
      */
-    default String getRawLine() {
-        throw new UnsupportedOperationException("Placeholders pre processing is disabled.");
+    default @Nullable String getRawLine() {
+        throw new UnsupportedOperationException("Placeholders pre-processing is disabled.");
     }
 
     /**
      * Saves the processed line. Used in placeholder pre-processing.
      *
-     * @param line The processed line.
+     * @param line The processed line. {@code null} if {@link Line#getRawLine()} returned {@code null}.
      * @throws UnsupportedOperationException If placeholders pre processing is disabled.
      */
-    default void setProcessedLine(String line) {
-        throw new UnsupportedOperationException("Placeholders pre processing is disabled.");
+    default void setProcessedLine(@Nullable String line) {
+        throw new UnsupportedOperationException("Placeholders pre-processing is disabled.");
     }
 
 }
