@@ -12,12 +12,12 @@ import com.fren_gor.ultimateScoreboards.api.scoreboards.ScoreboardLite;
 import com.fren_gor.ultimateScoreboards.api.scoreboards.ScoreboardLong;
 import com.fren_gor.ultimateScoreboards.api.scoreboards.ScoreboardStatic;
 import org.bukkit.entity.Player;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Collection;
 import java.util.List;
-import java.util.function.Supplier;
 
 /**
  * API main class.
@@ -41,7 +41,7 @@ public abstract class UltimateScoreboardsAPI {
     /**
      * Set an instance of {@link UltimateScoreboardsAPI} to be retrieved with {@link UltimateScoreboardsAPI#getAPI()}.
      *
-     * @param api An instance of {@link UltimateScoreboardsAPI}. {@code null} if UltimateScoreboards plugin id disabling.
+     * @param api An instance of {@link UltimateScoreboardsAPI}. {@code null} if UltimateScoreboards plugin is disabling.
      */
     public static void setAPI(@Nullable UltimateScoreboardsAPI api) {
         UltimateScoreboardsAPI.api = api;
@@ -50,110 +50,133 @@ public abstract class UltimateScoreboardsAPI {
     // =============== Long Scoreboard ===================
 
     @NotNull
+    @Contract(value = "_, _ -> new", pure = true)
     public abstract ScoreboardLong craftLongScoreboard(@NotNull Line title, @NotNull List<Line> lines);
 
     @NotNull
+    @Contract(value = "_, _, _ -> new", pure = true)
     public abstract ScoreboardLong craftLongScoreboard(@NotNull Line title, @NotNull List<Line> lines, long updateFrequency);
 
     @NotNull
+    @Contract(value = "_, _, _ -> new", pure = true)
     public abstract ScoreboardLong craftLongScoreboard(@NotNull Line title, @NotNull List<Line> lines, boolean ensureUniqueness);
 
     @NotNull
+    @Contract(value = "_, _, _, _ -> new", pure = true)
     public abstract ScoreboardLong craftLongScoreboard(@NotNull Line title, @NotNull List<Line> lines, long updateFrequency, boolean ensureUniqueness);
 
     @NotNull
+    @Contract("_, _, _ -> new")
     public abstract <P extends Player> ScoreboardLong craftLongScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers);
 
     @NotNull
-    public abstract <P extends Player> ScoreboardLong craftLongScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers,
-                                                                          long updateFrequency);
+    @Contract("_, _, _, _ -> new")
+    public abstract <P extends Player> ScoreboardLong craftLongScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers, long updateFrequency);
 
     @NotNull
-    public abstract <P extends Player> ScoreboardLong craftLongScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers,
-                                                                          boolean ensureUniqueness);
+    @Contract("_, _, _, _ -> new")
+    public abstract <P extends Player> ScoreboardLong craftLongScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers, boolean ensureUniqueness);
 
     @NotNull
-    public abstract <P extends Player> ScoreboardLong craftLongScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers,
-                                                                          long updateFrequency, boolean ensureUniqueness);
+    @Contract("_, _, _, _, _ -> new")
+    public abstract <P extends Player> ScoreboardLong craftLongScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers, long updateFrequency, boolean ensureUniqueness);
 
     // =============== Lite Scoreboard ===================
 
     @NotNull
+    @Contract(value = "_, _ -> new", pure = true)
     public abstract ScoreboardLite craftLiteScoreboard(@NotNull Line title, @NotNull List<Line> lines);
 
     @NotNull
+    @Contract(value = "_, _, _ -> new", pure = true)
     public abstract ScoreboardLite craftLiteScoreboard(@NotNull Line title, @NotNull List<Line> lines, long updateFrequency);
 
     @NotNull
+    @Contract("_, _, _ -> new")
     public abstract <P extends Player> ScoreboardLite craftLiteScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers);
 
     @NotNull
-    public abstract <P extends Player> ScoreboardLite craftLiteScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers,
-                                                                          long updateFrequency);
+    public abstract <P extends Player> ScoreboardLite craftLiteScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers, long updateFrequency);
 
     // =============== Static Scoreboard ===================
 
     @NotNull
+    @Contract(value = "_, _ -> new", pure = true)
     public abstract ScoreboardStatic craftStaticScoreboard(@NotNull Line title, @NotNull List<Line> lines);
 
     @NotNull
+    @Contract(value = "_, _, _ -> new", pure = true)
     public abstract ScoreboardStatic craftStaticScoreboard(@NotNull Line title, @NotNull List<Line> lines, boolean ensureUniqueness);
 
     @NotNull
+    @Contract("_, _, _ -> new")
     public abstract <P extends Player> ScoreboardStatic craftStaticScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers);
 
     @NotNull
-    public abstract <P extends Player> ScoreboardStatic craftStaticScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers,
-                                                                              boolean ensureUniqueness);
+    @Contract("_, _, _, _ -> new")
+    public abstract <P extends Player> ScoreboardStatic craftStaticScoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers, boolean ensureUniqueness);
 
     // =============== v1_13 Scoreboard ===================
 
     @NotNull
+    @Contract(value = "_, _ -> new", pure = true)
     public abstract Scoreboard1_13 craft1_13Scoreboard(@NotNull Line title, @NotNull List<Line> lines);
 
     @NotNull
+    @Contract(value = "_, _, _ -> new", pure = true)
     public abstract Scoreboard1_13 craft1_13Scoreboard(@NotNull Line title, @NotNull List<Line> lines, long updateFrequency);
 
     @NotNull
+    @Contract("_, _, _ -> new")
     public abstract <P extends Player> Scoreboard1_13 craft1_13Scoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers);
 
     @NotNull
-    public abstract <P extends Player> Scoreboard1_13 craft1_13Scoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers,
-                                                                          long updateFrequency);
+    @Contract("_, _, _, _ -> new")
+    public abstract <P extends Player> Scoreboard1_13 craft1_13Scoreboard(@NotNull Line title, @NotNull List<Line> lines, @Nullable Collection<P> viewers, long updateFrequency);
 
     // =============== Lines ===================
 
     @NotNull
+    @Contract(value = "_ -> new", pure = true)
     public abstract TextLine craftTextLine(@NotNull String line);
 
     @NotNull
+    @Contract(value = "_ -> new", pure = true)
     public abstract SlidingLine craftSlidingLine(@NotNull String line);
 
     @NotNull
+    @Contract(value = "_, _ -> new", pure = true)
     public abstract SlidingLine craftSlidingLine(@NotNull String line, boolean skipBlanks);
 
     @NotNull
+    @Contract(value = "_, _, _ -> new", pure = true)
     public abstract SlidingLine craftSlidingLine(@NotNull String line, boolean skipBlanks, boolean reverse);
 
     @NotNull
+    @Contract(value = "_ -> new", pure = true)
     public abstract StepLine craftStepLine(@NotNull Collection<String> steps);
 
     @NotNull
+    @Contract(value = "_, _ -> new", pure = true)
     public abstract UpdateFrequencyLine addUpdateFrequency(@NotNull Line base, long updateFrequency);
 
     @NotNull
+    @Contract(value = "_ -> new", pure = true)
     public abstract PlaceholderLine addPlaceholdersReplacing(@NotNull Line base);
 
     // =========================================
 
     @NotNull
-    public abstract ScoreboardGroup craftScoreboardGroup(boolean perPlayerScoreboard, @NotNull Supplier<Scoreboard> scoreboardCrafter);
+    @Contract(value = "_, _ -> new", pure = true)
+    public abstract ScoreboardGroup craftScoreboardGroup(boolean perPlayerScoreboard, @NotNull ScoreboardCrafter<Scoreboard> scoreboardCrafter);
 
     public abstract void hide(@NotNull Player player);
 
+    @Contract(pure = true)
     public abstract boolean isViewing(@NotNull Player player);
 
     @Nullable
+    @Contract(pure = true)
     public abstract Scoreboard getCurrentScoreboard(@NotNull Player player);
 
     public abstract void show(@NotNull Player player, @NotNull Scoreboard scoreboard);

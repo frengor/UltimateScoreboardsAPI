@@ -7,8 +7,6 @@ package com.fren_gor.ultimateScoreboards.api.exceptions;
  */
 public class DisposedException extends ScoreboardException {
 
-    private static final long serialVersionUID = 3218301750308830860L;
-
     public DisposedException() {
     }
 

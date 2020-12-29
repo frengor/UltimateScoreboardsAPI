@@ -7,8 +7,6 @@ package com.fren_gor.ultimateScoreboards.api.exceptions;
  */
 public class ConfigurationException extends RuntimeException {
 
-    private static final long serialVersionUID = 5208190250804744307L;
-
     public ConfigurationException() {
     }
 

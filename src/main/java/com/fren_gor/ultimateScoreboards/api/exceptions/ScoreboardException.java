@@ -7,8 +7,6 @@ package com.fren_gor.ultimateScoreboards.api.exceptions;
  */
 public class ScoreboardException extends RuntimeException {
 
-    private static final long serialVersionUID = 2101307492949933727L;
-
     public ScoreboardException() {
     }
 

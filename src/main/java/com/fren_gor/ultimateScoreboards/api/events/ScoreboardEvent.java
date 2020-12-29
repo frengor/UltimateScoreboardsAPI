@@ -7,6 +7,7 @@ import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import org.jetbrains.annotations.NotNull;
 
 public class ScoreboardEvent extends Event {
 
@@ -25,6 +26,7 @@ public class ScoreboardEvent extends Event {
     }
 
     @Override
+    @NotNull
     public HandlerList getHandlers() {
         return handlers;
     }
