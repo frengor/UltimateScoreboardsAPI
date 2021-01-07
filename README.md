@@ -15,6 +15,7 @@ UltimateScoreboard is:
 * **extensive**: you can customize everything from the config
 * **reliable**: scoreboards will never flick thanks to the built-in antiflicker
 * **asynchronous**: the plugin is all packet-based, which means that it won't impact on the server performance
+* **hex colors**: supports hex colors on 1.16+ servers
 * **powerful**: you can create scoreboards with ~72 characters per line with only 1-tick update delay (this only on 1.8-1.12 servers, on 1.13+ mojang removed all limitations).
 
 ### Minecraft Limitations
