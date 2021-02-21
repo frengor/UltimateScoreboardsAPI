@@ -25,9 +25,10 @@
 .settings/
 
 # IntelliJ Idea Files #
-.idea/
+.idea/*
 *.iml
 *.iws
+!.idea/copyright/
 
 # Maven #
 target/
