@@ -39,8 +39,8 @@ If you're a developer and you're intrested check out the [official Developer API
 ```
 ```xml
 <dependency>
-    <groupId>com.github.frengor</groupId>
-    <artifactId>UltimateScoreboards</artifactId>
+    <groupId>com.frengor</groupId>
+    <artifactId>UltimateScoreboardsAPI</artifactId>
     <version>1.0</version>
 </dependency>
 ```
