@@ -137,6 +137,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.1</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -145,9 +146,6 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -160,6 +158,9 @@
                         <goals>
                             <goal>jar</goal>
                         </goals>
+                        <configuration>
+                            <failOnWarnings>true</failOnWarnings>
+                        </configuration>
                     </execution>
                     <!-- Then again with delombok -->
                     <execution>
@@ -171,12 +172,14 @@
                         <configuration>
                             <doclint>none</doclint>
                             <sourcepath>${project.build.directory}/delombok</sourcepath>
+                            <links>
+                                <link>https://javadoc.io/doc/org.jetbrains/annotations/19.0.0/</link>
+                            </links>
                         </configuration>
                     </execution>
                 </executions>
                 <configuration>
                     <quiet>true</quiet>
-                    <failOnWarnings>true</failOnWarnings>
                 </configuration>
             </plugin>
         </plugins>
