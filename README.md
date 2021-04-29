@@ -46,4 +46,4 @@ If you're a developer and you're intrested check out the [official Developer API
     <scope>provided</scope>
 </dependency>
 ```
-API-Jar download for manual dependency addition: <https://jenkins.frengor.com/job/UltimateAdvancementAPI/>
+API-Jar download for manual dependency addition: <https://jenkins.frengor.com/job/UltimateScoreboardsAPI/>
