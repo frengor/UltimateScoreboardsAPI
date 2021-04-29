@@ -1,5 +1,4 @@
 # UltimateScoreboards
-[![](https://jitpack.io/v/frengor/UltimateScoreboardsAPI.svg)](https://jitpack.io/#frengor/UltimateScoreboardsAPI)
 
 Official repository of UltimateScoreboards plugin. Get it on <https://www.spigotmc.org/>.
 
@@ -29,19 +28,22 @@ From 1.13, Mojang removed those limitations, seeing how server were using scoreb
 In the repository you'll find the official API of the plugin.  
 If you're a developer and you're intrested check out the [official Developer API Wiki](https://github.com/frengor/UltimateScoreboardsAPI/wiki/Developer-API).
 
-**Javadocs:** <https://us-docs.frengor.com> ([alternative link](https://frengor.github.io/UltimateScoreboardsAPI/))  
+**Javadocs:** <https://frengor.com/javadocs/UltimateScoreboardsAPI/build-server>  
 **Maven:**
 ```xml
-<repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-</repository>
+<repositories>
+    <repository>
+        <id>fren_gor</id>
+        <url>https://nexus.frengor.com/repository/public/</url>
+    </repository>
+</repositories>
 ```
 ```xml
 <dependency>
     <groupId>com.frengor</groupId>
-    <artifactId>UltimateScoreboardsAPI</artifactId>
+    <artifactId>ultimatescoreboards-api</artifactId>
     <version>1.0</version>
+    <scope>provided</scope>
 </dependency>
 ```
-API-Jar download for manual dependency addition: <https://github.com/frengor/UltimateScoreboardsAPI/releases>
+API-Jar download for manual dependency addition: <https://jenkins.frengor.com/job/UltimateAdvancementAPI/>
