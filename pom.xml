@@ -80,7 +80,6 @@
         <defaultGoal>clean install</defaultGoal>
         <resources>
             <resource>
-                <targetPath>.</targetPath>
                 <filtering>false</filtering>
                 <directory>.</directory>
                 <includes>
@@ -88,7 +87,6 @@
                 </includes>
             </resource>
             <!-- <resource>
-                <targetPath>.</targetPath>
                 <filtering>true</filtering>
                 <directory>src/main/resources/</directory>
                 <excludes>
