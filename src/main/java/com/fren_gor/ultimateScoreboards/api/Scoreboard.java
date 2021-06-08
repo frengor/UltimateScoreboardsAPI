@@ -3,6 +3,7 @@
 package com.fren_gor.ultimateScoreboards.api;
 
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 
 import java.util.Collection;
 import java.util.List;
@@ -11,6 +12,8 @@ import java.util.Set;
 public interface Scoreboard {
 
     ScoreboardType getType();
+
+    Plugin getOwningPlugin();
 
     void setUpdateFrequency(long updateFrequency);
 

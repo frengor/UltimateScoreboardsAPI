@@ -2,10 +2,14 @@
 
 package com.fren_gor.ultimateScoreboards.api;
 
+import org.bukkit.plugin.Plugin;
+
 public interface ScoreboardGroup {
 
     boolean isPerPlayerScoreboard();
 
     Scoreboard craftScoreboard();
+
+    Plugin getOwningPlugin();
 
 }
